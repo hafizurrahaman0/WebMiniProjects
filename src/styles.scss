@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$bg-color: #222;
+$color: #fff;
+$font: "Poppins", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin display-flex($justify-content, $align-items, $flex-direction, $gap) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    gap: $gap;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+    font-family: $font;
+}
+
+// Header Styles
+
+header {
+    width: 100%;
+    background-color: $bg-color;
+    color: $color;
+    padding: 20px;
+}
+
+// Main Styles
+
+main {
+    padding: 20px;
+    background-color: #333;
+
+    a {
+        color: #fff;
+    }
+    a:hover {
+        color: yellowgreen;
+    }
+}
