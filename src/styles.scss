@@ -37,6 +37,7 @@ header {
 // Main Styles
 
 main {
+    @include display-flex(center, center, row, 20px);
     padding: 20px;
     background-color: #333;
 
