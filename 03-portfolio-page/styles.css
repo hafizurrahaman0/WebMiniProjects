@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: rgb(163, 0, 0);
+    --font-01: "Poppins", sans-serif;
+    --font-02: "Noto Serif Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-01);
+}
+
+/* utility classes */
+
+.text-red {
+    color: var(--primary-color);
+}
+
+.background-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.container {
+    margin-inline: 50px;
+}
+
+/* ---------------------------------- */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./portfolio-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: #000000c5;
+    position: absolute;
+}
+
+header nav .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+/* main stylings */
+
+main {
+    height: 100vh;
+    margin: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.title h1{
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 110px;
+}
+
+.title .name {
+    font-weight: 200;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--primary-color);
+    padding: 20px 80px;
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid transparent;
+}
