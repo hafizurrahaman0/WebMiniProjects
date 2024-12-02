@@ -33,6 +33,9 @@ h1 {
 .resource-card {
     background-color: #fff;
     border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -48,6 +51,32 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.resource-card .thumbnail {
+    background-color: #ccc;
+    cursor: context-menu;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.deep-dev {
+    background-color: #8b96f9;
+    color: #fff;
+    padding: 5px;
+}
+
+.dev-to {
+    width: 100px;
+    background-color: #000;
+    color: #fff;
 }
 
 .resource-card a {
