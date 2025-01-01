@@ -48,3 +48,15 @@ main {
         color: yellowgreen;
     }
 }
+
+// Media Queries
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 10px
+    }
+
+    main {
+        @include display-flex(flex-start, flex-start, column, 20px);
+        padding: 20px 10px;
+    }
+}
