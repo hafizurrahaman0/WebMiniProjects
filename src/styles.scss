@@ -49,6 +49,29 @@ main {
     }
 }
 
+.card {
+    background: $bg-gradient;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    min-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    h2 {
+        color: $color;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
 // Media Queries
 @media screen and (max-width: 768px) {
     header {
@@ -56,7 +79,7 @@ main {
     }
 
     main {
-        @include display-flex(flex-start, flex-start, column, 20px);
+        @include display-flex(flex-start, center, column, 20px);
         padding: 20px 10px;
     }
 }
